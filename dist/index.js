@@ -1,10 +1,10 @@
 "use strict";
 /**
- * @module @theroyalwhee0/ducktype
+ * @module @theroyalwhee0/liketype
  * @file Duck-type checks for Javascript and Typescript.
  * @version v0.0.1
  * @author Adam Mill <hismajesty@theroyalwhee.com>
- * @copyright Copyright 2019-2021 Adam Mill
+ * @copyright Copyright 2021 Adam Mill
  * @license Apache-2.0
  */
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -24,7 +24,7 @@ function likeError(value) {
 }
 exports.likeError = likeError;
 /**
- * Is an Promise?
+ * Like a Promise?
  * @param {unknown} value The value to check.
  * @returns {boolean} The results.
  */

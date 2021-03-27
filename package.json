@@ -28,6 +28,9 @@
     "jsdoc": "3.6.6",
     "typescript": "4.2.3"
   },
+  "dependencies": {
+    "@theroyalwhee0/istype": "3.0.0"
+  },
   "scripts": {
     "build": "tsc && mkdir -p ./dist && cp ./build/src/* ./dist/",
     "test": "tsc && jest",
@@ -37,8 +40,5 @@
     "docs": "jsdoc --pedantic --readme ./README.md --recurse --destination docs/ dist/",
     "clean-build": "mkdir -p dist/ build/ docs/ && rm -fR build/* && rm -f dist/* && npm run build && npm run docs",
     "dryrun": "npm prune && npm audit && npm run lint && npm test && npm publish --dry-run"
-  },
-  "dependencies": {
-    "@theroyalwhee0/istype": "3.0.0"
   }
 }

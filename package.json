@@ -4,7 +4,7 @@
   "description": "Duck-type checks for Javascript and Typescript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "Adam Mill <hismajesty@theroyalwhee.com>",
+  "author": "Adam Mill <hismajesty@theroyalwhee.com> (https://www.theroyalwhee.com)",
   "license": "Apache-2.0",
   "keywords": [
     "types",

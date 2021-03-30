@@ -47,7 +47,7 @@ test('should type-guard as error', () => {
 test.each([
   new Error(),
   new Error(''),
-  new Error('Paiting'),
+  new Error('Painting'),
   new MyFailure(),
   new MyFailure(''),
   new MyFailure('Table'),

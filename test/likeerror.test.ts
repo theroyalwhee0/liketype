@@ -3,7 +3,10 @@ import { likeError } from '../src/index.js';
 /**
  * Inherit from Error.
  */
-class MyError extends Error{
+class MyFailure extends Error {
+  // NOTE: No 'Error' in name.
+}
+class FatalException extends MyFailure {
 }
 
 /**
@@ -11,9 +14,9 @@ class MyError extends Error{
  */
 class PretendError {
 
-  msg:string;
+  msg: string;
 
-  constructor(msg?:string) {
+  constructor(msg?: string) {
     this.msg = msg || '';
   }
 
@@ -32,8 +35,8 @@ test('likeError should be a function', () => {
 });
 
 test('should type-guard as error', () => {
-  const value:unknown = new Error('Hello');
-  if(likeError(value)) {
+  const value: unknown = new Error('Hello');
+  if (likeError(value)) {
     expect(value.message).toBe("Hello");
   } else {
     // expect(value.message).toBe("Hello");  // This shouldn't compile.
@@ -45,9 +48,12 @@ test.each([
   new Error(),
   new Error(''),
   new Error('Paiting'),
-  new MyError(),
-  new MyError(''),
-  new MyError('Table'),
+  new MyFailure(),
+  new MyFailure(''),
+  new MyFailure('Table'),
+  new FatalException(),
+  new FatalException(''),
+  new FatalException('Speaker'),
   new PretendError(),
   new PretendError(''),
   new PretendError('Chair'),

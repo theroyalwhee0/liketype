@@ -24,6 +24,8 @@ Running ```npm run test``` will run the test suite. Running ```npm run test-watc
 
 
 ## History
+- v0.0.2 - 2021-06-11
+  - Bump depends for security.
 - v0.0.1 - 2021-03-27
   - Initial release.
 

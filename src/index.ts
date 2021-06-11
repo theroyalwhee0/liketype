@@ -1,7 +1,7 @@
 /**
  * @module @theroyalwhee0/liketype
  * @file Duck-type checks for Javascript and Typescript.
- * @version v0.0.1
+ * @version v0.0.2
  * @author Adam Mill <hismajesty@theroyalwhee.com>
  * @copyright Copyright 2021 Adam Mill
  * @license Apache-2.0

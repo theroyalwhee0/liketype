@@ -24,6 +24,8 @@ Running ```npm run test``` will run the test suite. Running ```npm run test-watc
 
 
 ## History
+- v1.0.0 - 2022-06-02
+  - Bump depends for security.
 - v0.0.2 - 2021-06-11
   - Bump depends for security.
 - v0.0.1 - 2021-03-27
@@ -31,6 +33,6 @@ Running ```npm run test``` will run the test suite. Running ```npm run test-watc
 
 
 ## Legal & License
-Copyright 2021 Adam Mill
+Copyright 2021-2022 Adam Mill
 
 This library is released under Apache 2 license. See [LICENSE](https://github.com/theroyalwhee0/liketype/blob/master/LICENSE) for more details.

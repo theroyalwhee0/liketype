@@ -2,7 +2,7 @@
 /**
  * @module @theroyalwhee0/liketype
  * @file Duck-type checks for Javascript and Typescript.
- * @version v0.0.1
+ * @version v0.0.2
  * @author Adam Mill <hismajesty@theroyalwhee.com>
  * @copyright Copyright 2021 Adam Mill
  * @license Apache-2.0
@@ -16,10 +16,10 @@ const istype_1 = require("@theroyalwhee0/istype");
  * @returns {boolean} The results.
  */
 function likeError(value) {
-    return !!((value instanceof Error) || (istype_1.isObject(value) &&
-        istype_1.isFunction(value.constructor) &&
-        istype_1.isString(value.message) &&
-        istype_1.isString(value.stack) &&
+    return !!((value instanceof Error) || ((0, istype_1.isObject)(value) &&
+        (0, istype_1.isFunction)(value.constructor) &&
+        (0, istype_1.isString)(value.message) &&
+        (0, istype_1.isString)(value.stack) &&
         /Error/i.test('' + value.constructor)));
 }
 exports.likeError = likeError;
@@ -29,9 +29,9 @@ exports.likeError = likeError;
  * @returns {boolean} The results.
  */
 function likePromise(value) {
-    return !!((value instanceof Promise) || (istype_1.isObject(value) &&
-        istype_1.isFunction(value.then) &&
-        istype_1.isFunction(value.catch)));
+    return !!((value instanceof Promise) || ((0, istype_1.isObject)(value) &&
+        (0, istype_1.isFunction)(value.then) &&
+        (0, istype_1.isFunction)(value.catch)));
 }
 exports.likePromise = likePromise;
 //# sourceMappingURL=index.js.map
